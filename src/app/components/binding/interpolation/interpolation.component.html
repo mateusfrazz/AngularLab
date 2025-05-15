@@ -1,9 +1,24 @@
 <div class="main">
-    <div class="mainCard">
-       <div class="textCard">
-          <h1>{{titulo}}</h1>
-          <p>{{desc}}</p>
-          <p>{{texto}}</p>
-       </div>
+  <div class="mainCard">
+    <div class="textCard">
+      <h1>{{ titulo }}</h1>
+      <p>{{ desc }}</p>
+      <p>{{ texto }}</p>
+      <button
+        (click)="alternarStatus()"
+        [style.background]="corBotao"
+        [style.width.px]="tamanhoBTN"
+        [style.height.px]="larguraBTN"
+      >
+        {{ textoBotao }}
+      </button>
+      <p [style.color]="corStatus">Usuário está {{ status }}</p>
+      <p>largura</p>
+      <button (click)="aumentarTamanhoBTN()">+</button>
+      <button (click)="diminuirTamanhoBTN()">-</button>
+      <p>tamanho</p>
+      <button (click)="aumentarLargura()">+</button>
+      <button (click)="diminuirLargura()">-</button>
     </div>
+  </div>
 </div>
