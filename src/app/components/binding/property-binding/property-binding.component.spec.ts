@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Card2Component } from './card2.component';
+import { PropertyBindingComponent } from './property-binding.component';
 
-describe('Card2Component', () => {
-  let component: Card2Component;
-  let fixture: ComponentFixture<Card2Component>;
+describe('PropertyBindingComponent', () => {
+  let component: PropertyBindingComponent;
+  let fixture: ComponentFixture<PropertyBindingComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Card2Component]
+      imports: [PropertyBindingComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Card2Component);
+    fixture = TestBed.createComponent(PropertyBindingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
